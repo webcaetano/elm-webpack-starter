@@ -41,7 +41,7 @@ view model =
         div [ class "jumbotron" ][
           img [ src "img/elm.jpg", style styles.img ] []                                    -- inline CSS (via var)
           , hello model                                                                     -- ext 'hello' component (takes 'model' as arg)
-          , p [] [ text ( "Elm Webpack Starter" ) ]
+          , p [] [ text ( "Elm Webpack Starterzzzz" ) ]
           , button [ class "btn btn-primary btn-lg", onClick Increment ] [                  -- click handler
             span[ class "glyphicon glyphicon-star" ][]                                      -- glyphicon
             , span[][ text "FTW!" ]
@@ -57,7 +57,9 @@ styles : { img : List ( String, String ) }
 styles =
   {
     img =
-      [ ( "width", "33%" )
-      , ( "border", "4px solid #337AB7")
+      [ 
+        ( "width", "33%" ),
+        ( "border-radius", "15px"),
+        ( "border", "4px solid #337AB7")
       ]
   }
